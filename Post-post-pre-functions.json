@@ -168,6 +168,6 @@
   "parallelInvocation": true,
   "includeOutputResults": true,
   "onlyColdStarts": true,
-  "preProcessorARN" : "<arn of the pre-processor lambda>",
-  "postProcessorARN" : "<arn of the post-processor lambda>"
+  "preProcessorARN": "<arn of the pre-processor lambda>",
+  "postProcessorARN": "<arn of the post-processor lambda>"
 }
