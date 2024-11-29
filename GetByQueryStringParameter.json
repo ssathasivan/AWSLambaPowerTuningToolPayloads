@@ -1,0 +1,65 @@
+{
+  "lambdaARN": "<arn of the lambda>",
+  "powerValues": [
+    128,
+    256,
+    512,
+    1024,
+    1536,
+    2048,
+    2560,
+    3072
+  ],
+  "num": 10,
+  "strategy": "speed",
+  "payload": {
+    "resource": "/api/v1/employees/query",
+    "path": "/api/v1/employees/query",
+    "httpMethod": "GET",
+    "headers": {
+      "Authorization": "Bearer token",
+      "Content-Type": "application/json"
+    },
+    "multiValueHeaders": {
+      "Authorization": [
+        "Bearer token"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "queryStringParameters": {
+      "empNo": "10107"
+    },
+    "multiValueQueryStringParameters": {
+      "empNo": [
+        "10107"
+      ]
+    },
+    "requestContext": {
+      "accountId": "123456789012",
+      "apiId": "api-id",
+      "httpMethod": "GET",
+      "path": "/api/v1/employees/query",
+      "resourcePath": "/api/v1/employees/query",
+      "stage": "prod",
+      "identity": {
+        "sourceIp": "192.168.1.1",
+        "userAgent": "Mozilla/5.0"
+      },
+      "requestId": "unique-request-id",
+      "domainName": "api-id.execute-api.us-east-1.amazonaws.com",
+      "protocol": "HTTP/1.1"
+    },
+    "pathParameters": null,
+    "stageVariables": null,
+    "body": null,
+    "isBase64Encoded": false
+  },
+  "inputDetails": {
+    "truncated": false
+  },
+  "parallelInvocation": true,
+  "includeOutputResults": true,
+  "onlyColdStarts": true
+}
