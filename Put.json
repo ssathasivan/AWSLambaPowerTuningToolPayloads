@@ -1,0 +1,55 @@
+{
+  "lambdaARN": "<arn of the lambda>",
+  "powerValues": [
+    128,
+    256,
+    512,
+    1024,
+    1536,
+    2048,
+    2560,
+    3072
+  ],
+  "num": 100,
+  "strategy": "speed",
+  "payload": {
+    "resource": "/api/v1/employees",
+    "path": "/api/v1/employees",
+    "httpMethod": "PUT",
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "multiValueHeaders": {
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "queryStringParameters": null,
+    "multiValueQueryStringParameters": null,
+    "requestContext": {
+      "accountId": "123456789012",
+      "apiId": "api-id",
+      "httpMethod": "PUT",
+      "path": "/api/v1/employees",
+      "resourcePath": "/api/v1/employees",
+      "stage": "prod",
+      "identity": {
+        "sourceIp": "192.168.1.1",
+        "userAgent": "PostmanRuntime/7.28.4"
+      },
+      "requestId": "unique-request-id",
+      "domainName": "api-id.execute-api.us-east-1.amazonaws.com",
+      "protocol": "HTTP/1.1"
+    },
+    "pathParameters": null,
+    "stageVariables": null,
+    "body": "{\"empNo\":\"500038\",\"firstName\":\"John\",\"lastName\":\"Nash\",\"birthDate\":\"1/1/1980\",\"gender\":\"M\",\"hireDate\":\"11/1/2004\"}",
+    "isBase64Encoded": false
+  },
+  "inputDetails": {
+    "truncated": false
+  },
+  "parallelInvocation": true,
+  "includeOutputResults": true,
+  "onlyColdStarts": true
+}
