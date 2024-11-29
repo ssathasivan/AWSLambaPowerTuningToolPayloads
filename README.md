@@ -1,1 +1,14 @@
-Conntains sample payloads for AWS Lambda Power Tuning Tools
+# Payloads for testing various HTTP Requests in  AWS Lambda Power Tuning tool
+
+The table contains GitHub links to sample input for testing various requests.
+
+| HTTP Method | GitHub URL|
+| --------- | ------- |
+| POST| Post-singleInput.json|
+| PUT| Put.json|
+| GET| Get.json|
+| GET (With Path Parameters) | GetByPathParameter.json|
+| GET (With QueryString) | GetByQueryStringParameter.json|
+| DELETE| Delete.json|
+| PATCH| Patch.json|
+
