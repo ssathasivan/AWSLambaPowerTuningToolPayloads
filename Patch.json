@@ -15,7 +15,7 @@
   "payload": {
     "resource": "/api/v1/employees/{empNo}",
     "path": "/api/v1/employees/500038",
-    "httpMethod": "PUT",
+    "httpMethod": "PATCH",
     "headers": {
       "Content-Type": "application/json"
     },
@@ -29,7 +29,7 @@
     "requestContext": {
       "accountId": "123456789012",
       "apiId": "api-id",
-      "httpMethod": "PUT",
+      "httpMethod": "PATCH",
       "path": "/api/v1/employees/500038",
       "resourcePath": "/api/v1/employees/{empNo}",
       "stage": "prod",
@@ -45,7 +45,7 @@
       "empNo": "500038"
     },
     "stageVariables": null,
-    "body": "{\"firstName\":\"Kevin\",\"lastName\":\"Nash\",\"birthDate\":\"1/1/1980\",\"gender\":\"M\",\"hireDate\":\"11/1/2004\"}",
+    "body": "{\"hireDate\":\"11/1/2023\"}",
     "isBase64Encoded": false
   },
   "inputDetails": {
