@@ -2,7 +2,7 @@
   "lambdaARN": "<arn of the lambda>",
   "powerValues": [
     128,
-	256,
+    256,
     512,
     1024,
     1536,
@@ -11,42 +11,43 @@
     3072
   ],
   "num": 10,
-  "strategy" : "speed",
-  "payload":{
-  "resource": "/api/v1/employees/{empNo}",
-  "path": "/api/v1/employees/500039",
-  "httpMethod": "DELETE",
-  "headers": {
-    "Authorization": "Bearer token"
-  },
-  "multiValueHeaders": {
-    "Authorization": ["Bearer token"]
-  },
-  "queryStringParameters": null,
-  "multiValueQueryStringParameters": null,
-  "requestContext": {
-    "accountId": "123456789012",
-    "apiId": "api-id",
-    "httpMethod": "DELETE",
+  "strategy": "speed",
+  "payload": {
+    "resource": "/api/v1/employees/{empNo}",
     "path": "/api/v1/employees/500039",
-    "resourcePath": "/api/v1/employees/{empNo}",
-    "stage": "prod",
-    "identity": {
-      "sourceIp": "192.168.1.1",
-      "userAgent": "Mozilla/5.0"
+    "httpMethod": "DELETE",
+    "headers": {
+      "Authorization": "Bearer token"
     },
-    "requestId": "unique-request-id",
-    "domainName": "api-id.execute-api.us-east-1.amazonaws.com",
-    "protocol": "HTTP/1.1"
+    "multiValueHeaders": {
+      "Authorization": [
+        "Bearer token"
+      ]
+    },
+    "queryStringParameters": null,
+    "multiValueQueryStringParameters": null,
+    "requestContext": {
+      "accountId": "123456789012",
+      "apiId": "api-id",
+      "httpMethod": "DELETE",
+      "path": "/api/v1/employees/500039",
+      "resourcePath": "/api/v1/employees/{empNo}",
+      "stage": "prod",
+      "identity": {
+        "sourceIp": "192.168.1.1",
+        "userAgent": "Mozilla/5.0"
+      },
+      "requestId": "unique-request-id",
+      "domainName": "api-id.execute-api.us-east-1.amazonaws.com",
+      "protocol": "HTTP/1.1"
+    },
+    "pathParameters": {
+      "empNo": "500039"
+    },
+    "stageVariables": null,
+    "body": null,
+    "isBase64Encoded": false
   },
-  "pathParameters": {
-    "empNo": "500039"
-  },
-  "stageVariables": null,
-  "body": null,
-  "isBase64Encoded": false
-}
-,
   "inputDetails": {
     "truncated": false
   },

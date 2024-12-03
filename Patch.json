@@ -10,7 +10,7 @@
     2560,
     3072
   ],
-  "num": 100,
+  "num": 10,
   "strategy": "speed",
   "payload": {
     "resource": "/api/v1/employees/{empNo}",
